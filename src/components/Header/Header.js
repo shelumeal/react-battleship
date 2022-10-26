@@ -6,9 +6,6 @@ function Header() {
   return (
     <div className="header">
       <div className="logo">Battleship Game</div>
-      {/* <Link to="/">
-        <div className="logo">Movie App</div>
-      </Link> */}
     </div>
   );
 }
