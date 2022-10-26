@@ -1,0 +1,22 @@
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.ship-container{
+    overflow: auto;
+    width: auto;
+    max-height: 500px;
+}
+
+.ship-icon {
+    width: 100px;
+    height: auto;
+    padding: 10px;
+}
+
+.ship-item {
+    float: left;
+}
+
