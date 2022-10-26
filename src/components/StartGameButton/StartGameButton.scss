@@ -1,0 +1,12 @@
+@import "../../asset/styles/colors.scss";
+
+.start-button{
+    color:$font-secondary;
+}
+
+.start-button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+

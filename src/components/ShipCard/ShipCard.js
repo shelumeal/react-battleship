@@ -3,11 +3,11 @@ import FirePoints from "../FirePoint/FirePoints";
 import "./ShipCard.scss";
 
 function ShipCard(props) {
-  let { flotilla } = props;
+  let { warShips } = props;
   return (
     <>
       <ul className="ship-container">
-        {flotilla.map((ship, index) => {
+        {warShips.map((ship, index) => {
           return (
             <li key={index} className="ship-item">
               <img src={ship.icon} className="ship-icon" alt="ship-icon" />

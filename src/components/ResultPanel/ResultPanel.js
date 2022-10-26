@@ -18,7 +18,7 @@ function ResultPanel() {
             ></PointCard>
           </div>
           <div className="col col-md-12 col-sm-12 col-xs-12">
-            <ShipCard flotilla={state.flotilla}></ShipCard>
+            <ShipCard warShips={state.warShips}></ShipCard>
           </div>
         </div>
       </div>

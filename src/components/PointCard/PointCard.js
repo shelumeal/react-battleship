@@ -2,14 +2,12 @@ import React from "react";
 import "./PointCard.scss";
 
 function PointCard(props) {
-  const { maximumHits, hits, shots } = props;
+  const { hits, shots } = props;
   return (
     <>
       <div className="point-Panel text-center">
         <div className="player-one">
-          <h2 className="score">
-            {maximumHits} {hits}
-          </h2>
+          <h2 className="score">{hits}</h2>
           <hr />
           <p className="title">Player 1</p>
         </div>

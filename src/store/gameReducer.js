@@ -1,6 +1,6 @@
 export const initialState = {
-  battleField: null,
-  flotilla: [],
+  gameBoard: null,
+  warShips: [],
   shots: 0,
   hits: 0,
   maximumHits: 0,
@@ -10,36 +10,38 @@ export const initialState = {
 const shopReducer = (state, action) => {
   const { type, payload } = action;
 
-  let newBattleField = state.battleField;
+  let newGameBoard = state.gameBoard;
   let shot = state.shots;
   let hits = state.hits;
-  let newFlotilla = null;
+  let newWarShips = null;
 
   switch (type) {
     case "START":
       return {
         ...state,
-        battleField: null,
+        gameField: payload.gameBoard,
         hits: payload.hits,
         shots: payload.shot,
-        flotilla: payload.flotilla,
+        warShips: payload.warShips,
       };
     case "HIT":
       return {
         ...state,
-        battleField: newBattleField,
+        gameBoard: newGameBoard,
         hits: hits,
         shots: shot,
-        flotilla: newFlotilla,
+        warShips: newWarShips,
       };
     case "MISS":
       return {
         ...state,
-        battleField: newBattleField,
+        gameBoard: newGameBoard,
         hits: hits,
         shots: shot,
-        flotilla: newFlotilla,
+        warShips: newWarShips,
       };
+    default:
+      return state;
   }
 };
 

@@ -1,0 +1,37 @@
+@import "../../asset/styles/colors.scss";
+
+.game-board {
+    background-color: white;
+}
+
+.game-board-table {
+    border: 1px solid #f4b23e;
+}
+
+.empty-game-board {
+    height: 500px;
+    width: 500px;
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 0;
+    table-layout: fixed;
+    border: 3px solid #f4b23e;
+    width: 500px;
+    height: 500px;
+}
+
+td {
+    height: 50px;
+    width: 50px;
+    border: 1px solid rgba(166, 164, 156, 0.8);
+    border-spacing: 0 0;
+    padding: 0;
+}
+
+.cellStyle {
+    width: 50px;
+    height: 48px;
+}

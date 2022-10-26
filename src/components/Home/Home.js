@@ -4,16 +4,18 @@ import ResultPanel from "../ResultPanel/ResultPanel";
 import useGame from "../../store/GameContext";
 import { calculateMaxHits } from "../../utils/calculateMaxHits";
 import { masterData } from "../../utils/masterData";
+import GameBoard from "../GameBoad/GameBoard";
 
 function Home() {
   const { state, start } = useGame();
 
   useEffect(() => {
     let newState = state;
+
     const maxHits = calculateMaxHits();
-    let newFlotilla = masterData;
+    let newWarShips = masterData;
     newState.maximumHits = maxHits;
-    newState.flotilla = newFlotilla;
+    newState.warShips = newWarShips;
 
     start(newState);
   }, []);
@@ -22,6 +24,7 @@ function Home() {
     <div className="container">
       <div className="row">
         <ResultPanel></ResultPanel>
+        <GameBoard></GameBoard>
       </div>
     </div>
   );
