@@ -20,6 +20,13 @@ A game application, built with ReactJs, JavaScript, HTML & CSS.
 **BackEnd:**
 No
 
+## Installation and Setup Instructions
+
+- Clone down this repository. You will need node and npm installed globally on your machine.
+- Installation: run 'npm install'
+- To Start Server: run 'npm start'
+- To Visit App: : localhost:3000/Home
+
 ## Screen Shot(s)
 
 Desktop Views.
