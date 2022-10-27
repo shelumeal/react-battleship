@@ -29,7 +29,7 @@ No
 
 ## Screen Shot(s)
 
-Desktop Views.
+**Desktop Views**
 
 ![App Screenshot](https://github.com/shelumeal/react-battleship/blob/master/screenshots/Desktop%20View%201.png?raw=true)
 
@@ -37,12 +37,17 @@ Desktop Views.
 
 ![App Screenshot](https://github.com/shelumeal/react-battleship/blob/master/screenshots/Desktop%20View%203.png?raw=true)
 
-## Installation and Setup Instructions
+**Mobile Views**
 
-- Clone down this repository. You will need node and npm installed globally on your machine.
-- Installation: run 'npm install'
-- To Start Server: run 'npm start'
-- To Visit App: : localhost:3000/Home
+![App Screenshot](https://github.com/shelumeal/react-battleship/blob/master/screenshots/Mobile%20View%201.png?raw=true)
+
+![App Screenshot](https://github.com/shelumeal/react-battleship/blob/master/screenshots/Mobile%20View%202.png?raw=true)
+
+**Tablet Views**
+
+![App Screenshot](https://github.com/shelumeal/react-battleship/blob/master/screenshots/Tablet%20View%201.png?raw=true)
+
+![App Screenshot](https://github.com/shelumeal/react-battleship/blob/master/screenshots/Tablet%20View%202.png?raw=true)
 
 ## Project Folder Structure
 
