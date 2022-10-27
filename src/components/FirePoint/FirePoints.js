@@ -10,14 +10,14 @@ function FirePoints(props) {
   for (let i = 0; i < hitPoints; i++) {
     hitPointsCounter.push(
       <span key={i}>
-        <img src={missSmall} className="hitPointMark" />
+        <img src={missSmall} alt="hitPointMark" className="hitPointMark" />
       </span>
     );
   }
   for (let j = 0; j < hits; j++) {
     hitCounter.push(
       <span key={j}>
-        <img src={hitSmall} className="hitPointMark" />
+        <img src={hitSmall} alt="hitPointMark" className="hitPointMark" />
       </span>
     );
   }
