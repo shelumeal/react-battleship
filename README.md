@@ -4,7 +4,9 @@ Battleship
 
 A game application, built with ReactJs, JavaScript, HTML & CSS.
 
-## Technologies Used
+## Tech Stack
+
+**FrontEnd:**
 
 - JavaScript
 - ReactJs V 18.2
@@ -15,7 +17,18 @@ A game application, built with ReactJs, JavaScript, HTML & CSS.
 - React-router
 - useReducer, useContext ( For state management)
 
+**BackEnd:**
+No
+
 ## Screen Shot(s)
+
+Desktop Views.
+
+![App Screenshot](https://github.com/shelumeal/react-battleship/blob/master/screenshots/Desktop%20View%201.png?raw=true)
+
+![App Screenshot](https://github.com/shelumeal/react-battleship/blob/master/screenshots/Desktop%20View%202.png?raw=true)
+
+![App Screenshot](https://github.com/shelumeal/react-battleship/blob/master/screenshots/Desktop%20View%203.png?raw=true)
 
 ## Installation and Setup Instructions
 
