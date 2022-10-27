@@ -25,7 +25,6 @@ function GameBoard() {
   };
 
   const onCellClick = (x, y, cellState) => {
-    console.log("called onCellClick");
     if (cellState !== "miss" && cellState !== "hitted") {
       let newGameBoard = makeClone(state.gameBoard);
       let shot = state.shots + 1;
@@ -76,7 +75,7 @@ function GameBoard() {
   };
 
   return (
-    <div className="col-lg-5 col-md-6 col-sm-12 col-xs-12 game-board">
+    <div className="col-lg-7 col-md-12 col-sm-12 col-xs-12 game-board">
       {!state.gameBoard && (
         <table
           className={`empty-game-board ${
@@ -86,6 +85,7 @@ function GameBoard() {
           <tbody>
             <tr>
               <td className="empty-game-board">
+                <h3 className="light mb-2">Battle Field</h3>
                 <StartGameButton onClick={onStarButtonClick} />
               </td>
             </tr>
@@ -117,6 +117,24 @@ function GameBoard() {
                 </tr>
               );
             })}
+          </tbody>
+        </table>
+      )}
+      {state.gameBoard && state.hits === 17 && (
+        <table
+          className={`emptyBattleField ${
+            state.screenType === "tablet" && "centered"
+          }`}
+        >
+          <tbody>
+            <tr>
+              <td>
+                <div className="text-center">
+                  <h3 className="light mb-2">Game over</h3>
+                  <StartGameButton onClick={onStarButtonClick} />
+                </div>
+              </td>
+            </tr>
           </tbody>
         </table>
       )}

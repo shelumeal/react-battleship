@@ -8,30 +8,130 @@
     border: 1px solid #f4b23e;
 }
 
-.empty-game-board {
-    height: 500px;
-    width: 500px;
+
+@media (min-width: 320px) {
+    .empty-game-board {
+        height: 280px;
+        width: 100%;
+    }
+
+    table {
+        display: table;
+        border-collapse: separate;
+        border-spacing: 0;
+        table-layout: fixed;
+        border: 3px solid #f4b23e;
+        height: 280px;
+        width: 100%;
+    }
+    
+    td {
+        height: 28px;
+        width: 28px;
+        border: 1px solid rgba(166, 164, 156, 0.8);
+        border-spacing: 0 0;
+        padding: 0;
+    }
+
+    .cellStyle {
+        width: 28px;
+        height: 26px;
+    }
+    
 }
 
-table {
-    display: table;
-    border-collapse: separate;
-    border-spacing: 0;
-    table-layout: fixed;
-    border: 3px solid #f4b23e;
-    width: 500px;
-    height: 500px;
+@media (min-width: 576px) {
+    .empty-game-board {
+        height: 550px;;
+        width: 100%;
+    }
+
+    .game-board-table {
+        border: 1px solid #f4b23e;
+        height: 400px;
+    }
+
+    table {
+        display: table;
+        border-collapse: separate;
+        border-spacing: 0;
+        table-layout: fixed;
+        border: 3px solid #f4b23e;
+        height: 280px;
+        width: 100%;
+    }
+    
+    td {
+        height: 28px;
+        width: 28px;
+        border: 1px solid rgba(166, 164, 156, 0.8);
+        border-spacing: 0 0;
+        padding: 0;
+    }
+
+    .cellStyle {
+        width: 80px;
+        height: 52px;
+    }
 }
 
-td {
-    height: 50px;
-    width: 50px;
-    border: 1px solid rgba(166, 164, 156, 0.8);
-    border-spacing: 0 0;
-    padding: 0;
+@media (min-width: 900px) {
+    .empty-game-board {
+        height: 500px;
+        width: 500px;
+    }
+    
+    table {
+        display: table;
+        border-collapse: separate;
+        border-spacing: 0;
+        table-layout: fixed;
+        border: 3px solid #f4b23e;
+        width: 500px;
+        height: 500px;
+    }
+    
+    td {
+        height: 50px;
+        width: 50px;
+        border: 1px solid rgba(166, 164, 156, 0.8);
+        border-spacing: 0 0;
+        padding: 0;
+    }
+    
+    .cellStyle {
+        width: 50px;
+        height: 48px;
+    }
 }
 
-.cellStyle {
-    width: 50px;
-    height: 48px;
+@media (min-width: 1200px) {
+
+    .empty-game-board {
+        height: 500px;
+        width: 500px;
+    }
+    
+    table {
+        display: table;
+        border-collapse: separate;
+        border-spacing: 0;
+        table-layout: fixed;
+        border: 3px solid #f4b23e;
+        width: 500px;
+        height: 500px;
+    }
+    
+    td {
+        height: 50px;
+        width: 50px;
+        border: 1px solid rgba(166, 164, 156, 0.8);
+        border-spacing: 0 0;
+        padding: 0;
+    }
+    
+    .cellStyle {
+        width: 50px;
+        height: 48px;
+    }
 }

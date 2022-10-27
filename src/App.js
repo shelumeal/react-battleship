@@ -11,7 +11,7 @@ import { GameProvider } from "./store/GameContext";
 function App() {
   return (
     <GameProvider>
-      <div className="App">
+      <div className="d-flex flex-column min-vh-100 App">
         <Header />
         <div className="main-container">
           <Routes>

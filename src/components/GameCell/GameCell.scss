@@ -1,11 +1,49 @@
 
 
-.missed {
-    width: 50px;
-    height: 50px;
+@media (min-width: 320px) {
+    .missed {
+        width: 35px;
+        height: 28px;
+    }
+    
+    .hitted {
+        width: 35px;
+        height: 28px;
+    }
 }
 
-.hitted {
-    width: 50px;
-    height: 50px;
+@media (min-width: 576px) {
+    .missed {
+        width: 80px;
+        height: 52px;
+    }
+    
+    .hitted {
+        width: 80px;
+        height: 52px;
+    }
+}
+
+@media (min-width: 900px) {
+    .missed {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .hitted {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .missed {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .hitted {
+        width: 50px;
+        height: 50px;
+    }
 }

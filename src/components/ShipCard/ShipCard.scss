@@ -1,22 +1,39 @@
 
-ul {
-    list-style-type: none;
-    padding: 0px;
-}
-
 .ship-container{
     overflow: auto;
     width: auto;
     max-height: 500px;
 }
 
-.ship-icon {
-    width: 100px;
-    height: auto;
-    padding: 10px;
+
+@media (min-width: 320px) {
+    .ship-icon {
+        width: 70px;
+        height: auto;
+        padding: 5px;
+    }
 }
 
-.ship-item {
-    float: left;
+@media (min-width: 576px) {
+    .ship-icon {
+        width: 70px;
+        height: auto;
+        padding: 5px;
+    }
 }
 
+@media (min-width: 900px) {
+    .ship-icon {
+        width: 100px;
+        height: auto;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .ship-icon {
+        width: 100px;
+        height: auto;
+        padding: 10px;
+    }
+}

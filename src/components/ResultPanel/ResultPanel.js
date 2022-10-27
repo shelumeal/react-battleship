@@ -7,7 +7,7 @@ import useGame from "../../store/GameContext";
 function ResultPanel() {
   const { state } = useGame();
   return (
-    <div className="col col-lg-2 offset-lg-2 col-md-3 offset-md-2 col-sm-12 col-xs-12">
+    <div className="col-lg-2 offset-lg-3 col-md-12 col-sm-12 col-xs-12">
       <div className="row">
         <div className="points-panel">
           <div className="col col-md-12 col-sm-12 col-xs-12">
@@ -17,7 +17,8 @@ function ResultPanel() {
               maximumHits={state.maximumHits}
             ></PointCard>
           </div>
-          <div className="col col-md-12 col-sm-12 col-xs-12">
+          <hr />
+          <div className="col-md-12 col-sm-12 col-xs-12 mt-2">
             <ShipCard warShips={state.warShips}></ShipCard>
           </div>
         </div>

@@ -23,7 +23,7 @@ function FirePoints(props) {
   }
 
   return (
-    <span>
+    <span className="hit-marker ">
       {hitPointsCounter}
       {hitCounter}
     </span>
