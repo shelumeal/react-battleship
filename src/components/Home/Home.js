@@ -13,7 +13,7 @@ function Home() {
     let newState = state;
 
     const maxHits = calculateMaxHits();
-    let newWarShips = masterData;
+    let newWarShips = JSON.parse(JSON.stringify(masterData)); // Clone masterdata
     newState.maximumHits = maxHits;
     newState.warShips = newWarShips;
 

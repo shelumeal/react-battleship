@@ -1,4 +1,5 @@
 import React from "react";
+import "./GameCell.scss";
 import hit from "../../asset/images/Hit.png";
 import miss from "../../asset/images/Miss.png";
 
@@ -16,7 +17,7 @@ function GameCell(props) {
       {cellState === "miss" && (
         <img
           src={miss}
-          className="miss"
+          className="missed"
           alt="miss"
           width="auto"
           height="auto"
