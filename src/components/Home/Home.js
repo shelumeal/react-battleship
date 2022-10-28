@@ -2,13 +2,33 @@ import React, { useEffect, useState } from "react";
 import "./Home.scss";
 import ResultPanel from "../ResultPanel/ResultPanel";
 import useGame from "../../store/GameContext";
+import GameBoard from "../GameBoad/GameBoard";
 import { calculateMaxHits } from "../../utils/calculateMaxHits";
 import { masterData } from "../../utils/masterData";
-import GameBoard from "../GameBoad/GameBoard";
 
 function Home() {
-  const { state, start } = useGame();
+  const { state, load } = useGame();
   const [windowSize, setwindowSize] = useState(getWindowDimensions());
+
+  useEffect(() => {
+    let newState = state;
+
+    function handleResize() {
+      setwindowSize(getWindowDimensions());
+    }
+    window.addEventListener("resize", handleResize);
+
+    const maxHits = calculateMaxHits(); // Calculate maximun number of hits
+    let newWarShips = JSON.parse(JSON.stringify(masterData)); // Clone masterdata
+    newState.maximumHits = maxHits;
+    newState.warShips = newWarShips;
+    newState.screenType = getScreenType();
+
+    // Dispatch action
+    load(newState);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   function getWindowDimensions() {
     return window.innerWidth;
@@ -21,28 +41,6 @@ function Home() {
       return "tablet";
     }
   }
-
-  useEffect(() => {
-    let newState = state;
-
-    const maxHits = calculateMaxHits();
-    let newWarShips = JSON.parse(JSON.stringify(masterData)); // Clone masterdata
-    newState.maximumHits = maxHits;
-    newState.warShips = newWarShips;
-
-    function handleResize() {
-      setwindowSize(getWindowDimensions());
-    }
-
-    window.addEventListener("resize", handleResize);
-
-    newState.screenType = getScreenType();
-
-    // Dispatch action
-    start(newState);
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
 
   return (
     <div className="container">

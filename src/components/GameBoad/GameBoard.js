@@ -16,9 +16,9 @@ function GameBoard() {
     let newGameBoard = createGameBoard();
 
     newState.warShips = newWarShips;
-    newState.hits = 0;
-    newState.shots = 0;
     newState.gameBoard = newGameBoard;
+    newState.shots = 0;
+    newState.hits = 0;
 
     // Dispatch action
     start(newState);
@@ -56,7 +56,6 @@ function GameBoard() {
         newState.gameBoard = newGameBoard;
         newState.hits = hits;
         newState.shots = shot;
-        newState.gameBoard = newGameBoard;
         newState.warShips = newWarShips;
 
         // Dispatch action

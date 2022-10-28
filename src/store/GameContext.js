@@ -6,32 +6,40 @@ const GameContext = createContext(initialState);
 export const GameProvider = ({ children }) => {
   const [state, dispatch] = useReducer(shopReducer, initialState);
 
-  const hit = (state) => {
+  const load = () => {
     dispatch({
-      type: "HIT",
+      type: "LOAD",
       payload: state,
     });
   };
 
-  const miss = () => {
-    dispatch({
-      type: "MISS",
-      payload: state,
-    });
-  };
-
-  const start = () => {
+  const start = (newState) => {
     dispatch({
       type: "START",
-      payload: state,
+      payload: newState,
+    });
+  };
+
+  const hit = (newState) => {
+    dispatch({
+      type: "HIT",
+      payload: newState,
+    });
+  };
+
+  const miss = (newState) => {
+    dispatch({
+      type: "MISS",
+      payload: newState,
     });
   };
 
   const value = {
     state: initialState,
+    load: load,
+    start: start,
     hit: hit,
     miss: miss,
-    start: start,
   };
 
   return <GameContext.Provider value={value}>{children}</GameContext.Provider>;
